@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-05"
+lastupdated: "2018-03-15"
 
 
 ---
@@ -30,33 +30,33 @@ Figure 1. Sample reference architecture
 
 The SAP guidelines for landscape design recommend a segregation of server traffic on different network interface controllers (NICs). For example, business data should be separated from administrative and backup traffic. Assigning multiple NICs to different subnets enables this data segregation. For more information, see the Network section in [Building High Availability for SAP NetWeaver and SAP HANA](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf) (PDF).
 
-To follow the NIC recommendation, {{site.data.keyword.cloud_notm}} allows for the configuration of multiple virtual LANs (VLANs) on the servers. The VLAN interfaces can be made high availability (HA) through multiple NICs to be configured under bond interfaces (Linux) or teaming interfaces (Microsoft Windows). For both HA and disaster recovery (DR) capabilities on the {{site.data.keyword.baremetal_short}}, it's best to reserve additional IP addresses and assign the addresses to the different SAP services as the services are implemented. Consult SAP installation documentation for support on how to assign addresses during the installation with the SAP Software Provisioning Manager (SWPM). For virtual machines (VMs), the address of the main interface of the VM is usually sufficient.
+To follow the NIC recommendation, {{site.data.keyword.cloud_notm}} allows for the configuration of multiple VLANs on the servers. The VLAN interfaces can be made high availability (HA) through multiple NICs to be configured under bond interfaces (Linux) or teaming interfaces (Microsoft Windows). For both HA and disaster recovery (DR) capabilities on the {{site.data.keyword.baremetal_short}}, it's best to reserve additional IP addresses and assign the addresses to the different SAP services as the services are implemented. Consult SAP installation documentation for support on how to assign addresses during the installation with the SAP Software Provisioning Manager (SWPM). For virtual machines (VMs), the address of the main interface of the VM is usually sufficient.
 
 By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} have a public and a private interface. In general, it's not recommended to keep the public LAN configured for all servers in your {{site.data.keyword.cloud_notm}} infrastructure. Specific instances of the Vyatta Network Gateway should be deployed to allow public access to your environment, if needed. For more information, see [Vyatta Network Gateway](/docs/infrastructure/sap-reference-architecture/sap-ra-architecture.html#vyatta). 
 
 ## {{site.data.keyword.cloud_notm}} storage
 {: #storage}
 
-{{site.data.keyword.cloud_notm}} servers certified for SAP NetWeaver can be configured with different numbers of internal disks as well as with different layouts for those disks for RAID configuration. Be aware that these layouts might not be sufficient for project requirements, for example, insufficient size, or shared access to storage.
+{{site.data.keyword.cloud_notm}} servers certified for SAP NetWeaver can be configured with a different number of internal disks as well as with different layouts for those disks for RAID configuration. Be aware that these layouts might not be sufficient for project requirements, for example, insufficient size, or shared access to storage.
 
 Storage requirements differ to the point that the guidance is to clearly define the project Key Performance Indicators (KPIs) in terms of backup and restore time slots, high availability and failover requirements, and then decide on the storage type to use. Covering all options is beyond the scope of this content; however, some guidance can be provided.
 
   * Use shared iSCSI devices for HA setups with a database that fails over between nodes. You will need to look at the required maximum IOPS/sec.
   
-  * Use internal storage for HA setups with a database that is replicated-such as SAP HANA system replication. SAP NetWeaver application servers can either reside on internal storage or on shared network-attached storage (NAS).
+  * Use internal storage for HA setups with a database that is replicated; for example, SAP HANA system replication. SAP NetWeaver application servers can either reside on internal storage or on shared network-attached storage (NAS).
   
   * Use shared storage to facilitate failover capabilities with VMware-based installations. For more information on selecting the right storage type, see [Storage to use with VMware Systems](https://console.bluemix.net/docs/infrastructure/vmware/select-storage-option-use-vmware.html#storage-to-use-with-vmware-systems).
   
 All the options can be selected from within the {{site.data.keyword.cloud_notm}} infrastructure.
 
-## Availability
+## High availability
 {: #availability}
 
-In a distributed installation of the SAP application on a centralized database, the base installation is replicated to achieve high availability. For each layer of the architecture, the high availability design varies. 
+In a distributed installation of SAP applications on a centralized database, the base installation is replicated to achieve high availability. For each layer of the architecture, the high availability design varies. 
 
   * **SAP Web Dispatcher**. High availability is achieved with multiple redundant SAP Web Dispatcher instances with SAP application traffic. The SAP Web Dispatcher serves as a potential entry point for a set of SAP systems and other `https`-based services. It typically lies between the internet and the backend systems and deals with web protocol-based requests from the "outside world." The SAP Web Dispatcher works like a reverse proxy with a variety of supported features, such as load balancing and single sign on. For more information, see [SAP Web Dispatcher](https://help.sap.com/saphelp_nw73EhP1/helpdata/en/48/8fe37933114e6fe10000000a421937/frameset.htm).
   
-  * **(ABAP) SAP Central Services (ASCS)**. For high availability of ASCS in an {{site.data.keyword.cloud_notm}} environment, the cluster software of the target operating system needs to be installed, for example, Linux Pacemaker or Microsoft Cluster. The single point of failure of the ASCS (SAP's enqueue service) needs to be configured to replicate its data to an Enqueue Replication Service (ERS). An ERS instance needs to be installed as part of the SAP installation process and is supported by SAP's SWPM. For details on installing and configuring the cluster components for both ASCS and ERS, consult the documentation of the operating system vendor's offering.
+  * **ABAP SAP Central Services (ASCS)**. For high availability of ASCS in an {{site.data.keyword.cloud_notm}} environment, the cluster software of the target operating system needs to be installed, for example, Linux Pacemaker or Microsoft Cluster. The single point of failure of the ASCS (SAP's enqueue service) needs to be configured to replicate its data to an Enqueue Replication Service (ERS). An ERS instance needs to be installed as part of the SAP installation process and is supported by SAP's SWPM. For details on installing and configuring the cluster components for both ASCS and ERS, consult the documentation of the operating system vendor's offering.
   
   * **SAP NetWeaver application servers**. High availability is achieved by load balancing traffic within a pool of application servers. If only a limited amount of resources are required, a single application server can be configured as highly available. The application server needs to be installed with storage that is accessible by all potential cluster nodes, which can be used for failover. Also, the SAP NetWeaver stack needs to use a virtual hostname. Consult the operating system documentation of the operating system vendor for details on the required configuration and SAP documentation for high availability. If your configuration requires multiple application servers, the configuration of the SAP application servers needs to cover load balancing, too, for example, in SAP logon groups and RFC server groups. For more information, see the administration guide for your SAP NetWeaver version.
   
@@ -80,7 +80,7 @@ Each tier uses a different strategy to provide disaster recovery protection.
 
 ### User management
 
-SAP has its own Users Management Engine (UME) to control role-based access and authorization with the SAP application. For more information, see [SAP HANA Security - An Overview](https://archive.sap.com/documents/docs/DOC-62943). From a user management perspective, it's not relevant if your SAP systems run on-premises {{site.data.keyword.cloud_notm}}. Exceptions to that rule were mentioned under [Jump box server](https://console.stage1.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-architecture.html#juump_box).
+SAP has its own Users Management Engine (UME) to control role-based access and authorization with the SAP application. For more information, see [SAP HANA Security - An Overview](https://archive.sap.com/documents/docs/DOC-62943). From a user management perspective, it's not relevant if your SAP systems run on-premises {{site.data.keyword.cloud_notm}}. Exceptions to that rule were mentioned under [Jump box server](/docs/infrastructure/sap-reference-architecture/sap-ra-architecture.html#juump_box).
 
 ### Network security
 

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-26"
+lastupdated: "2018-03-15"
 
 
 ---
@@ -32,7 +32,7 @@ Figure 1 is a reference architecture (RA) for a landscape comprised of
   * SAP HANA databases
   * Other relational database management systems (RDBMS) 
   
-The example RA is configured with high availability (HA) and disaster recover (DR). Note that in the example, the SAP HANA databases can be "any" database from an infrastructure standpoint. 
+The example RA is configured with high availability and disaster recovery. Note that in the example, the SAP HANA databases can be "any" database from an infrastructure standpoint. 
 
 Figure 1. Sample reference architecture
 

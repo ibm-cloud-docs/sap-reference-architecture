@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-01"
+lastupdated: "2018-03-15"
 
 
 ---
@@ -58,4 +58,4 @@ Your sales team is available to answer questions, as well as other {{site.data.k
 
 ## Is there a service responsibility matrix that shows the management tasks performed by IBM, the  customer, and Business Partner?
 
-The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is a self-managed offering. All infrastructure management is the responsibility of the customer.
+The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is a self-managed offering. All infrastructure management is the responsibility of the customer and Business Partner.

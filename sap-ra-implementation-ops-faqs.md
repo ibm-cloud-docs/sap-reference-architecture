@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-06"
+lastupdated: "2018-03-15"
 
 
 ---
@@ -46,4 +46,4 @@ Backups are not included in the self-managed offering. There are, however, backu
 
 ## How do I migrate my on-premises systems to the IBM Cloud?
 
-No migration servers are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services](https://ibm.com/us-en/marketplace/cloud-consulting-services).
+No migration servers are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services](https://ibm.com/us-en/marketplace/cloud-consulting-services).

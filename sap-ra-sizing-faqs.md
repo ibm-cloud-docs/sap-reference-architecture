@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-03-15"
 
 
 ---
@@ -32,7 +32,7 @@ Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud
 | BI.S1.NW256 | 55020 | 256 GB | 24 | 2293 |
 | BI.S2.NW512 | 65520 | 512 GB | 28 | 2340 |
 
-## What are that databases supported by the IBM Cloud SAP-Certified Infrastructure offering?
+## What are the databases supported by the IBM Cloud SAP-Certified Infrastructure offering?
 
 For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported database platforms. For full operating system and database support statements for SAP NetWeaver, see [SAP Note 2414097](https://launchpad.support.sap.com/#/notes/2414097).
 
