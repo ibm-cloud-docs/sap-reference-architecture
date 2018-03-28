@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-03-28"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-15"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Guidance for you SAP on IBM Cloud environment
+# Guidance for your SAP on IBM Cloud environment
 {: #recommendations}
 
 Your requirements might differ from the offered guidance; however, it serves as a starting point for building your SAP-certified server in the {{site.data.keyword.cloud}} environment.
