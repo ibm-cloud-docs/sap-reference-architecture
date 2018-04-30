@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-04-30"
 
 
 ---
@@ -27,10 +27,15 @@ Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud
 
 | **Sever type** | **SAPS** | **RAM** | **Cores** | **SAPS/Core** |
 | --- | --- | --- | --- | --- |
-| BI.S1.NW32 | 10980 | 32 GB | 4 | 2688 |
+| BI.S1.NW32 | 10980 | 32 GB | 4 | 2745 |
 | BI.S1.NW128 | 54130 | 128 GB | 24 | 2255 |
-| BI.S1.NW256 | 55020 | 256 GB | 24 | 2293 |
+| BI.S1.NW256 | 55020 | 256 GB | 24 | 2292 |
 | BI.S2.NW512 | 65520 | 512 GB | 28 | 2340 |
+| BI.S3.NW32 | 11970 | 32 GB | 4 | 2992 |
+| BI.S3.NW64 | 12750 | 64 GB | 4 | 3187 |
+| BI.S3.NW192 | 78850 | 192 GB | 36 | 2190 |
+| BI.S3.NW384 | 79430 | 384 GB | 36 | 2203 |
+| BI.S3.NW768 | 79630 | 768 GB | 36 | 2211 |
 
 ## What are the databases supported by the IBM Cloud SAP-Certified Infrastructure offering?
 
