@@ -1,0 +1,1 @@
+Traditional Chines translation files.
