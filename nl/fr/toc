@@ -1,0 +1,22 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="sap-reference-architecture" audience="compute" href="/docs/infrastructure/sap-reference-architecture/sap-ra-index.html"}
+Architecture de référence SAP sur IBM Cloud
+
+    {: .navgroup id="learn"}
+    sap-ra-index.md
+    sap-ra-architecture.md
+    sap-ra-recommendations.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    {: .topicgroup}
+    Foire aux questions
+        sap-ra-faqs-unmanaged.md
+        sap-ra-faqs-licensing-pricing.md
+        sap-ra-implementation-ops-faqs.md
+        sap-ra-sizing-faqs.md
+        sap-ra-hana-faqs.md
+        sap-ra-sap-application-faqs.md      
+    {: .navgroup-end}
