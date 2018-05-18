@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-18"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-03-28"
 
 ## Does IBM Cloud offer managed servers for SAP?
 
-Yes, {{site.data.keyword.IBM&reg;}} offers a managed services component of the {{site.data.keyword.clouc_notm}}for SAP Applications offering. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications](https://www.ibm.com/cloud/sap/managed).
+Yes, IBM offers a managed services component of the {{site.data.keyword.cloud}} for SAP Applications offering. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications](https://www.ibm.com/cloud/sap/managed).
 
 ## How do I install my SAP applications on the IBM Cloud infrastructure?
 
