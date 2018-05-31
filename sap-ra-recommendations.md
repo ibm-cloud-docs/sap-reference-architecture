@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-28"
+lastupdated: "2018-05-31"
 
 
 ---
@@ -16,14 +16,14 @@ lastupdated: "2018-03-28"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Guidance for your SAP on IBM Cloud environment
+# Guidance for your IBM Cloud SAP-Certified Infrastructure
 {: #recommendations}
 
 Your requirements might differ from the offered guidance; however, it serves as a starting point for building your SAP-certified server in the {{site.data.keyword.cloud}} environment.
 
 Figure 1. Sample reference architecture
 
-![Figure 1. Sample reference architecture](/images/ref_architecture.png "Sample reference architecture")
+![Figure 1. Sample reference architecture](/images/SAP-optimization-ref-architecture-20180527.png "Sample reference architecture")
 
 ## VLANs
 {: #vlans}
