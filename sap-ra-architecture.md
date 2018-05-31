@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-05-31"
 
 
 ---
@@ -29,7 +29,7 @@ In Figure 1, on the DR data center site, replicated systems are configured to ma
 
 Figure 1. Sample reference architecture
 
-![Figure 1. Sample reference architecture](/images/ref_architecture.png "Sample reference architecture")
+![Figure 1. Sample reference architecture](/images/SAP-optimization-ref-architecture-20180527.png "Sample reference architecture")
 
 ## SAP systems
 {: #sap-systems}
