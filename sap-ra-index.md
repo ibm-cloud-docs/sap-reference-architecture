@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-26"
+lastupdated: "2018-05-31"
 
 
 ---
@@ -36,4 +36,4 @@ The example RA is configured with high availability and disaster recovery. Note 
 
 Figure 1. Sample reference architecture
 
-![Figure 1. Sample reference architecture](/images/ref_architecture.png "Sample reference architecture")
+![Figure 1. Sample reference architecture](/images/SAP-optimization-ref-architecture-20180527.png "Sample reference architecture")
