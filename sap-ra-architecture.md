@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-07-20"
 
 
 ---
@@ -23,7 +23,7 @@ The architecture example in Figure 1 might differ from your architecture; it sho
 
 After your environment is ordered and deployed, you connect through an administrative VPN to your {{site.data.keyword.cloud_notm}} infrastructure. The VPN might not be sufficient for connecting your on-premises systems with cloud-based systems, which is why you can deploy a Vyatta Network appliance in the {{site.data.keyword.cloud_notm}} environment. For higher bandwidth and lower latency requirements, an Ethernet circuit handover into the cloud environment is also supported.
 
-There are two different data centers shown in Figure 1 that consist of several SAP Infrastructure as a Service (IaaS)-certified servers for both SAP NetWeaver and SAP HANA. The servers or virtual machines in the diagram can be different, depending on your environment and the database technology you're using. In addition, the SAP HANA data in the architectural overview is transferred from the primary data center to the secondary data center for disaster recovery (DR). Other databases also allow for setups like Figure 1, with the setups being different.
+There are two different data centers shown in Figure 1 that consist of several SAP-certified {{site.data.keyword.baremetal_short}} for both SAP NetWeaver and SAP HANA. The {{site.data.keyword.baremetal_short}} or virtual machines in the diagram can be different, depending on your environment and the database technology you're using. In addition, the SAP HANA data in the architectural overview is transferred from the primary data center to the secondary data center for disaster recovery (DR). Other databases also allow for setups like Figure 1, with the setups being different.
 
 In Figure 1, on the DR data center site, replicated systems are configured to maintain DR capabilities, which need to be implemented on different layers. For more information, see [Disaster recovery considerations](/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr). 
 
@@ -34,12 +34,12 @@ Figure 1. Sample reference architecture
 ## SAP systems
 {: #sap-systems}
 
-The SAP systems (Advanced Business Application Programming (ABAP), Java, and SAP HANA) have a granular set of authorization objects for user management. Because of this, only remote access from desktops or other front-end devices to the {{site.data.keyword.cloud_notm}}-based environment need to be set up. No end user access needs to be granted and managed in the cloud environment. There might be several users with different responsibilities who need access to a database through a specific GUI, on a command-line level, or the latency restrictions that require Remote Desktop Protocol-based access. To manage this type of remote access, a "jump host" can be deployed in the environment to serve as a central point of access for these types of scenarios. Apart from these specific requirements, users have access to the cloud-based systems within your corporate network and don't need to be administered in any specific way.
+The SAP systems (Advanced Business Application Programming (ABAP), Java, and SAP HANA) have a granular set of authorization objects for user management. Because of this, only remote access from desktops or other front-end devices to the {{site.data.keyword.cloud_notm}}-based environment need to be set up. No end user access needs to be granted and managed in the cloud environment. There might be several users with different responsibilities who need access to a database through a specific GUI, a command-line, or have latency restrictions that require Remote Desktop Protocol-based access. To manage this type of remote access, a "jump host" can be deployed in the environment to serve as a central point of access for these scenarios. Apart from these specific requirements, users have access to the cloud-based systems within your corporate network and do not need to be administered in any specific way.
 
 ## Network
 {: #network}
 
-Any device in an {{site.data.keyword.cloud_notm}} environment can be ordered with a choice of internal and optional external LAN access. The external address is a routable public IP address and should be handled with care. The internal address is determined by the ordered VLAN and chosen from a sub-range of 10.0.0.0/8 for the VLAN. By ordering multiple VLANs, different environments or traffic types can be segregated as per your network design and security requirements.
+Any device in an {{site.data.keyword.cloud_notm}} environment can be ordered with a choice of internal and optional external LAN access. The external address is a routable public IP address and should be handled with care. The internal address is determined by the ordered VLAN and chosen from a sub-range of 10.0.0.0/8 for the VLAN. By ordering multiple VLANs, different environments, or traffic types, can be segregated as per your network design and security requirements.
 
 While a public interface with a configured firewall can cover some scenarios-for example, a short term, rapid prototyping proof of concept with non-critical data-a firewall device should be considered for most cases. The example reference architecture maps a production scenario, so public network interfaces are out-of-scope.
 
