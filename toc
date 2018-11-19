@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-reference-architecture" audience="compute" arm="2437231" href="/docs/infrastructure/sap-reference-architecture/sap-ra-index.html" path="infrastructure/sap-reference-architecture"}
+{: .toc subcollection="sap-reference-architecture" audience="compute" href="/docs/infrastructure/sap-reference-architecture/sap-ra-index.html" path="infrastructure/sap-reference-architecture"}
 SAP Reference Architecture on IBM Cloud
 
     {: .navgroup id="learn"}
@@ -20,3 +20,4 @@ SAP Reference Architecture on IBM Cloud
         sap-ra-hana-faqs.md
         sap-ra-sap-application-faqs.md      
     {: .navgroup-end}
+

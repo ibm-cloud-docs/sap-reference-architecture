@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-01"
+lastupdated: "2018-11-14"
 
 
 ---
@@ -13,6 +13,7 @@ lastupdated: "2018-03-01"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:faq: data-hd-content-type='faq'}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -20,17 +21,21 @@ lastupdated: "2018-03-01"
 {: #faqs_licensing_pricing}
 
 ## How does SAP licensing work with the IBM Cloud infrastructure?
+{: faq}
 
 The {{site.data.keyword.cloud}} SAP-Certified Infrastructure follows the bring your own license (BYOL) model.
 
 ## Is the operating system (OS) included with the price of the server?
+{: faq}
 
 Yes, the cost of the OS license is included when you select your OS on the Order Form for your SAP-certified server.
 
 ## Is the database license included in the price of the server?
+{: faq}
 
 The database license, just like the SAP applications licensing, follows the BYOL model.
 
 ## How are the SAP-certified IBM Cloud servers priced?
+{: faq}
 
 Prices are provided through the {{site.data.keyword.cloud_notm}} infrastructure customer portal, specifically when you begin the ordering process.

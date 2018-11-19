@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-31"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -30,9 +30,9 @@ Figure 1 is a reference architecture (RA) for a landscape comprised of
   * SAP Web Dispatcher
   * SAP NetWeaver Application Servers
   * SAP HANA databases
-  * Other relational database management systems (RDBMS) 
-  
-The example RA is configured with high availability and disaster recovery. Note that in Figure 1, the database servers can be any database system supported by SAP NetWeaver, for example, SAP HANA. 
+  * Other relational database management systems (RDBMS)
+
+The example RA is configured with high availability and disaster recovery. Note that in Figure 1, the database servers can be any database system supported by SAP NetWeaver, for example, SAP HANA.
 
 Figure 1. Sample reference architecture
 

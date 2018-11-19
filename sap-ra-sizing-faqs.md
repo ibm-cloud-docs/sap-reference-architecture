@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-04-30"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -13,6 +13,7 @@ lastupdated: "2018-04-30"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:faq: data-hd-content-type='faq'}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -20,6 +21,7 @@ lastupdated: "2018-04-30"
 {: #faqs_sizing}
 
 ## What are the SAP Application Performance Standard (SAPS) measurements for each SAP NetWeaver-certified IBM Cloud server (rate SAPS and core)?
+{: faq}
 
 Table 1 contains the SAP measurements for the SAP NetWeaver-certified {{site.data.keyword.cloud}} {{site.data.keyword.baremetal_short}}.
 
@@ -38,28 +40,33 @@ Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud
 | BI.S3.NW768 | 79630 | 768 GB | 36 | 2211 |
 
 ## What are the databases supported by the IBM Cloud SAP-Certified Infrastructure offering?
+{: faq}
 
-For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported database platforms. For full operating system and database support statements for SAP NetWeaver, see [SAP Note 2414097](https://launchpad.support.sap.com/#/notes/2414097).
+For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported database platforms. For full operating system and database support statements for SAP NetWeaver, see [SAP Note 2414097 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}.
 
 ## Can a Tier-2 configuration (application server, plus an SAP HANA database) be done with the SAP HANA-certified IBM Cloud Bare Metal Servers?
+{: faq}
 
 A Tier-2 configuration can't be done on the same piece of hardware. It can, however, be done using a combination of the SAP NetWeaver and SAP HANA configurations.
 
 ## Is virtualization (VMware) supported on the IBM Cloud SAP-certified infrastructure for SAP NetWeaver or SAP HANA?
+{: faq}
 
-Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA. It's important to note that if you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991).
+Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA. It's important to note that if you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2161991){: new_window}.
 
-## Can the configurations of the SAP-certified IBM Cloud Bare Metal Servers be changed?
+## Can the configurations of the SAP-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} be changed?
+{: faq}
 
 SAP HANA-certified {{site.data.keyword.baremetal_short}} have fixed configurations for processor, RAM, and local storage based on the server you choose, and cannot be modified. Options for networking, operating system, and monitoring services can be configured.
 
 SAP NetWeaver-certified {{site.data.keyword.baremetal_short}} have fixed configurations for processor and RAM; local storage can be configured as necessary to meet your needs. Options for networking, operating system, and monitoring services can be configured.
 
-## Are there any leading methods by which to deploy an SAP solution in the IBM Cloud SAP-certified infrastructure?
+## Are there any leading methods by which to deploy an SAP solution in the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure?
+{: faq}
 
-Yes, [SAP Best Practices](https://help.sap.com/viewer/p/SAP_Best_Practices) offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services](https://www.ibm.com/us-en/marketplace/cloud-consulting-services).
+Yes, [SAP Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/p/SAP_Best_Practices){: new_window} offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/cloud-consulting-services){: new_window}.
 
 ## Do I have to deploy SAP Solutions Manager and SAProuter? If yes, is there a recommended infrastructure?
+{: faq}
 
 No, deploying SAP Solutions Manager and SAProuter is not mandatory when working with a training, sandbox, or similar environment. However, it is best that these components be deployed in your production environment.
-
