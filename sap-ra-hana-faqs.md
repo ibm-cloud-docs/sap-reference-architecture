@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-14"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -24,13 +24,13 @@ lastupdated: "2018-11-14"
 {: faq}
 
 The SAP-certified {{site.data.keyword.baremetal_long}} are available in the following RAM sizes:
-  * 512 GB
-  * 1 TB
-  * 2 TB
-  * 4 TB
-  * 6 TB
-  * 8 TB
-  * 12 TB
+* 512 GB
+* 1024 GB (1 TB)
+* 2048 GB (2 TB)
+* 4096 GB (4 TB)
+* 6144 GB (6 TB)
+* 8192 GB (8 TB)
+* 12288 GB (12 TB)
 
 ## What hardware sharing options are supported in the IBM Cloud infrastructure? For example, Virtual HANA and Multitenant Database Containers (MDC).
 {: faq}
@@ -40,12 +40,12 @@ The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering is a 
 ## How do I deploy SAP HANA on the IBM Cloud?
 {: faq}
 
-Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-index.html#getting-started). As this is a self-managed offering, you're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
+Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started). As this is a self-managed offering, you're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [Managed Services for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
 
 ## Is scale-out supported for SAP HANA?
 {: faq}
 
-Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html#multi-node-storage) for more information.
+Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage) for more information.
 
 ## What is the maximum server size supported for SAP Business Suite on HANA?
 {: faq}
@@ -65,7 +65,7 @@ Server backup is not included in the self-managed offering. There are options th
 ## How do I migrate an existing SAP HANA database or relational database to an SAP HANA-certified server in the IBM Cloud?
 {: faq}
 
-No migration services are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.com/us-en/marketplace/cloud-consulting-services){: new_window}.
+No migration services are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.com/us-en/marketplace/cloud-consulting-services){: new_window}. Select *Services* > *Cloud Services*.
 
 ## Is SAP HANA 2.0 supported as part of the IBM Cloud SAP-Certified Infrastructure offering?
 {: faq}

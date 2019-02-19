@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -33,7 +33,7 @@ The {{site.data.keyword.cloud_notm}} for SAP Applications offering has multiple 
 ## Are managed services available with the IBM Cloud infrastructure?
 {: faq}
 
-Yes, {{site.data.keyword.IBM_notm}} can provide managed services for the operating system, database, and SAP through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
+Yes, {{site.data.keyword.IBM_notm}} can provide managed services for the operating system, database, and SAP through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. For more information, see [Managed Services for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
 
 ## Can SAP be run on any IBM Cloud server?
 {: faq}
@@ -64,7 +64,7 @@ You can add most infrastructure options, such as attached storage, network, secu
 ## Who do I contact if I have further questions on the SAP-certified servers?
 {: faq}
 
-Your sales team is available to answer questions, as well as other {{site.data.keyword.cloud_notm}} support options, such as chat, phone, and [{{site.data.keyword.cloud_notm}} Docs](/docs/get-support/howtogetsupport.html).
+Your sales team is available to answer questions, as well as other {{site.data.keyword.cloud_notm}} support options, such as chat, phone, and [{{site.data.keyword.cloud_notm}} Docs](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 ## Is there a service responsibility matrix that shows the management tasks performed by IBM, the  customer, and Business Partner?
 {: faq}

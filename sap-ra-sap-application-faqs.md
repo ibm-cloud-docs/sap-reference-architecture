@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -28,7 +28,7 @@ The SAP Business Suite, including SAP S/4HANA and SAP Business Warehouse on HANA
 ## Can I run non-SAP NetWeaver applications, such as SAP Hybris and SAP BusinessObjects?
 {: faq}
 
-SAP BusinessObjects is certified to run on virtual servers within the {{site.data.keyword.cloud}}. For more information, see [SAP Note 2279688 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2279688){: new_window}. SAP Hybris is out-of-scope for the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering. For complex SAP implementation, {{site.data.keyword.IBM_notm}} does offer fully managed services for SAP. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
+SAP BusinessObjects is certified to run on virtual servers within the {{site.data.keyword.cloud}}. For more information, see [SAP Note 2279688 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2279688){: new_window}. SAP Hybris is out-of-scope for the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering. For complex SAP implementation, {{site.data.keyword.IBM_notm}} does offer fully managed services for SAP. For more information, see [Managed Services for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
 
 ## Is SAP Business One supported on the SAP-certified Bare Metal Servers?
 {: faq}

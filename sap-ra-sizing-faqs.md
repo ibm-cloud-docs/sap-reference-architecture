@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -64,7 +64,7 @@ SAP NetWeaver-certified {{site.data.keyword.baremetal_short}} have fixed configu
 ## Are there any leading methods by which to deploy an SAP solution in the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure?
 {: faq}
 
-Yes, [SAP Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/p/SAP_Best_Practices){: new_window} offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/cloud-consulting-services){: new_window}.
+Yes, [SAP Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/p/SAP_Best_Practices){: new_window} offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [SAP-certified infrastructure ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/certified-infrastructure){: new_window}.
 
 ## Do I have to deploy SAP Solutions Manager and SAProuter? If yes, is there a recommended infrastructure?
 {: faq}

@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -22,7 +22,7 @@ lastupdated: "2018-11-15"
 ## Does IBM Cloud offer managed servers for SAP?
 {: faq}
 
-Yes, IBM offers a managed services component of the {{site.data.keyword.cloud}} for SAP Applications offering. For more information, see [{{site.data.keyword.cloud_notm}} for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
+Yes, IBM offers a managed services component of the {{site.data.keyword.cloud}} for SAP Applications offering. For more information, see [Managed Services for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
 
 ## How do I install my SAP applications on the IBM Cloud infrastructure?
 {: faq}
@@ -32,9 +32,9 @@ SAP applications are manually installed and are your responsibility because ther
 ## Where do I find information on how to implement SAP on the IBM Cloud infrastructure?
 {: faq}
 
-  * For information on how to implement your SAP NetWeaver environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver/sap-index.html#getting-started){: new_window}.
+  * For information on how to implement your SAP NetWeaver environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started#getting-started).
 
-  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-index.html#getting-started){: new_window}.
+  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started).
 
 ## How do I access my SAP systems running on the IBM Cloud?
 {: faq}
@@ -54,4 +54,4 @@ Backups are not included in the self-managed offering. There are, however, backu
 ## How do I migrate my on-premises systems to the IBM Cloud?
 {: faq}
 
-No migration servers are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.com/us-en/marketplace/cloud-consulting-services).
+No migration servers are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see [{{site.data.keyword.cloud_notm}} Advisory Services ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.com/us-en/marketplace/cloud-consulting-services). Select *Services* > *Cloud Services*.

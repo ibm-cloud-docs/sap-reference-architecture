@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-14"
+  years: 2018, 2019
+lastupdated: "2019-02-13"
 
 
 ---
@@ -25,7 +25,7 @@ After your environment is ordered and deployed, you connect through an administr
 
 There are two different data centers shown in Figure 1 that consist of several SAP-certified {{site.data.keyword.baremetal_short}} for both SAP NetWeaver and SAP HANA. The {{site.data.keyword.baremetal_short}} or virtual machines in the diagram can be different, depending on your environment and the database technology you're using. In addition, the SAP HANA data in the architectural overview is transferred from the primary data center to the secondary data center for disaster recovery (DR). Other databases also allow for setups like Figure 1, with the setups being different.
 
-In Figure 1, on the DR data center site, replicated systems are configured to maintain DR capabilities, which need to be implemented on different layers. For more information, see [Disaster recovery considerations](/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
+In Figure 1, on the DR data center site, replicated systems are configured to maintain DR capabilities, which need to be implemented on different layers. For more information, see [Disaster recovery considerations](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
 
 Figure 1. Sample reference architecture
 
@@ -46,9 +46,9 @@ While a public interface with a configured firewall can cover some scenarios-for
 ## Vyatta Network Gateway
 {: #vyatta}
 
-Vyatta provides software-based virtual router, virtual firewall/NAT, and VPN capabilities for both IPv4 and IPv6. If users are to connect remotely into your {{site.data.keyword.cloud_notm}}-based systems, these devices can serve as end-points for both side-to-side VPN or the so-called "road warrior VPN" (access point). Different kinds of VPN technologies-IPSec, or SSL VPN tunnels, such as OpenVPN-can be used. Depending on the SAP technology you're using, these VPN connections can be used to interconnect SAP systems (even with non-SAP systems) for traditional GUI technology, as well as browser-based SAP UI5 technology. Connecting an SAP Web Dispatcher behind a Vyatta Gateway allows for further features to be used, such as load balancing or single sign-on scenarios. For more information on the SAP Web Dispatcher, see [Availability](/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability).
+Vyatta provides software-based virtual router, virtual firewall/NAT, and VPN capabilities for both IPv4 and IPv6. If users are to connect remotely into your {{site.data.keyword.cloud_notm}}-based systems, these devices can serve as end-points for both side-to-side VPN or the so-called "road warrior VPN" (access point). Different kinds of VPN technologies-IPSec, or SSL VPN tunnels, such as OpenVPN-can be used. Depending on the SAP technology you're using, these VPN connections can be used to interconnect SAP systems (even with non-SAP systems) for traditional GUI technology, as well as browser-based SAP UI5 technology. Connecting an SAP Web Dispatcher behind a Vyatta Gateway allows for further features to be used, such as load balancing or single sign-on scenarios. For more information on the SAP Web Dispatcher, see [High availability](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#availability).
 
-The Vyatta device can be deployed in a high-availability cluster configuration with a bandwidth up to 10 Gbps. For more information, see [Vyatta Gateways](/docs/infrastructure/subnets/about.html#vyatta-gateways).
+The Vyatta device can be deployed in a high-availability cluster configuration with a bandwidth up to 10 Gbps. For more information, see [Vyatta 5400 High Availability Configuration](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-vyatta-5400-high-availability-configuration#vyatta-5400-high-availability-configuration).
 
 ## Jump box server
 {: #jump_box}
@@ -60,7 +60,7 @@ A jump box server lets you give specific users low-level access to your {{site.d
 ## SAP servers - SAP HANA and SAP NetWeaver
 {: #sap_servers}
 
-{{site.data.keyword.IBM_notm}} offers a variety of servers for SAP HANA and SAP NetWeaver through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. The servers are {{site.data.keyword.baremetal_short}} with your choice of operating system (OS) (Red Hat Linux, SUSE Linux, Microsoft Windows Server, or deployed with the VMware ESX hypervisor). For details on the SAP NetWeaver-certified servers, see [SAP Note 2414097 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}. Be aware that on the hypervisor, you deploy one of the operating systems listed in SAP Note 2414097 as a guest OS. 
+{{site.data.keyword.IBM_notm}} offers a variety of servers for SAP HANA and SAP NetWeaver through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. The servers are {{site.data.keyword.baremetal_short}} with your choice of operating system (OS) (Red Hat Linux, SUSE Linux, Microsoft Windows Server, or deployed with the VMware ESX hypervisor). For details on the SAP NetWeaver-certified servers, see [SAP Note 2414097 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}. Be aware that on the hypervisor, you deploy one of the operating systems listed in SAP Note 2414097 as a guest OS.
 
 SAP HANA servers come with a pre-selected storage layout that fulfills SAP's storage Key Performance Indicators (KPIs) for SAP HANA. You cannot change these layouts and you're urged not to use external storage for SAP HANA. External storage of different quality and accessible through different protocols-NFS, CIFS, iSCSI-can be used for backup and other purposes. Also, for the SAP NetWeaver servers, you have a choice to run other supported database systems on external storage.
 
@@ -68,6 +68,6 @@ All SAP software solutions based on either SAP HANA or on SAP NetWeaver include 
 
 For more information on the SAP HANA-certified servers, see the [Certified and Supported SAP HANA Hardware Directory ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=IBM%20Cloud){: new_window}.
 
-For more information on the SAP HANA sizing process, see [4. Sizing the server](/docs/infrastructure/sap-hana/hana-size-server.html#size_the_server).
+For more information on the SAP HANA sizing process, see [4. Sizing the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server).
 
-For more information on SAP NetWeaver sizing processing, see [4. Sizing the server](/docs/infrastructure/sap-netweaver/sap-size-server.html#size_the_server).
+For more information on SAP NetWeaver sizing processing, see [4. Sizing the server](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-size_the_server#size_the_server).
