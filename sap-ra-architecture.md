@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-03-05"
 
+keywords: SAP reference architecture, {{site.data.keyword.baremetal_short}}, Advanced Business Application Programming, ABAP, VLAN, SAP Web Dispatcher, load balancing, database, high availability, disaster recovery, HA, DR
+
+subcollection: sap-reference-architecture
 
 ---
 
@@ -68,6 +69,6 @@ All SAP software solutions based on either SAP HANA or on SAP NetWeaver include 
 
 For more information on the SAP HANA-certified servers, see the [Certified and Supported SAP HANA Hardware Directory ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=IBM%20Cloud){: new_window}.
 
-For more information on the SAP HANA sizing process, see [4. Sizing the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server).
+For more information on the SAP HANA sizing process, see [Sizing the server (SAP HANA)](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server).
 
-For more information on SAP NetWeaver sizing processing, see [4. Sizing the server](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-size_the_server#size_the_server).
+For more information on SAP NetWeaver sizing processing, see [Sizing the server (SAP NetWeaver)](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-size_the_server#size_the_server).

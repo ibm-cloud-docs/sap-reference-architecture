@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-03-04"
 
+keywords: SAP reference architecture, {{site.data.keyword.baremetal_short}}, Advanced Business Application Programming, ABAP, application servers
+
+subcollection: sap-reference-architecture
 
 ---
 

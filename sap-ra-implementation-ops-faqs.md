@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-03-04"
 
+keywords: SAP Reference Architecture, Frequently Asked Questions, FAQs, {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure implementation and operations
+
+subcollection: sap-reference-architiecture
 
 ---
 

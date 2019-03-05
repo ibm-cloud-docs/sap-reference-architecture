@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
 lastupdated: "2019-02-13"
 
+keywords: SAP Reference Architecture, SAP Application Performance Standard, SAPS, application servers, database, SAProuter
+
+subcollection: sap-reference-architecture
 
 ---
 
