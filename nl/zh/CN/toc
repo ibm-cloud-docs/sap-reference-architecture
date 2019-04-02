@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-reference-architecture" audience="compute" href="/docs/infrastructure/sap-reference-architecture/sap-ra-index.html"}
+{: .toc subcollection="sap-reference-architecture" audience="compute" href="/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-getting-started" path="infrastructure/sap-reference-architecture"}
 IBM Cloud 上的 SAP 参考体系结构
 
     {: .navgroup id="learn"}
@@ -18,5 +18,5 @@ IBM Cloud 上的 SAP 参考体系结构
         sap-ra-implementation-ops-faqs.md
         sap-ra-sizing-faqs.md
         sap-ra-hana-faqs.md
-        sap-ra-sap-application-faqs.md      
+        sap-ra-sap-application-faqs.md
     {: .navgroup-end}
