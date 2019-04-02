@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-03-26"
+  years: 2018, 2019
+lastupdated: "2019-03-04"
 
+keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery
+
+subcollection: sap-reference-architecture
 
 ---
 
@@ -25,14 +26,15 @@ L'architecture {{site.data.keyword.cloud}} fournit des fonctionnalités techniqu
 {: #ref-arch}
 
 La figure 1 est une architecture de référence pour un environnement composé des éléments suivants :
+
   * Composants réseau Vyatta
   * Répartiteur Web SAP
   * Serveurs d'applications SAP NetWeaver
   * Bases de données SAP HANA
-  * Autres systèmes de gestion de base de données relationnelle 
-  
-L'architecture de référence est configurée avec des fonctionnalités de haute disponibilité et de reprise après incident. Notez que dans la figure 1, les serveurs de base de données peuvent être des systèmes de base de données pris en charge par SAP NetWeaver, tel SAP HANA. 
+  * Autres systèmes de gestion de base de données relationnelle
+
+L'architecture de référence est configurée avec des fonctionnalités de haute disponibilité et de reprise après incident. Notez que dans la figure 1, les serveurs de base de données peuvent être des systèmes de base de données pris en charge par SAP NetWeaver, tel SAP HANA.
 
 Figure 1. Architecture de référence exemple
 
-![Figure 1. Architecture de référence exemple](/images/ref_architecture.png "Architecture de référence exemple")
+![Figure 1. Architecture de référence exemple](/images/SAP-optimization-ref-architecture-20180527.png "Architecture de référence exemple")
