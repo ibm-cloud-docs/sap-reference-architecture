@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-03-26"
+  years: 2018, 2019
+lastupdated: "2019-03-04"
 
+keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery
+
+subcollection: sap-reference-architecture
 
 ---
 
@@ -30,10 +31,10 @@ lastupdated: "2018-03-26"
   * SAP Web 分派器
   * SAP NetWeaver 應用程式伺服器
   * SAP HANA 資料庫
-  * 其他關聯式資料庫管理系統 (RDBMS) 
-  
-範例 RA 配置有高可用性及災難回復。請注意，在圖 1 中，資料庫伺服器可以是 SAP NetWeaver 支援的任何資料庫系統，例如 SAP HANA。 
+  * 其他關聯式資料庫管理系統 (RDBMS)
+
+範例 RA 配置有高可用性及災難回復。請注意，在圖 1 中，資料庫伺服器可以是 SAP NetWeaver 支援的任何資料庫系統，例如 SAP HANA。
 
 圖 1. 範例參照架構
 
-![圖 1. 範例參照架構](/images/ref_architecture.png "範例參照架構")
+![圖 1. 範例參照架構](/images/SAP-optimization-ref-architecture-20180527.png "範例參照架構")
