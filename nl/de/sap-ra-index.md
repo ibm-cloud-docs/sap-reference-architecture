@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-03-26"
+  years: 2018, 2019
+lastupdated: "2019-03-04"
 
+keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery
+
+subcollection: sap-reference-architecture
 
 ---
 
@@ -30,10 +31,10 @@ Abbildung 1 zeigt eine Referenzarchitektur (RA) für eine Systemlandschaft mit f
   * SAP Web Dispatcher
   * SAP NetWeaver Application Server
   * SAP HANA-Datenbanken
-  * Andere Managementsysteme für relationale Datenbanken (RDBMS) 
-  
-Die Beispielreferenzarchitektur ist mit Hochverfügbarkeits- und Wiederherstellungsfunktionen konfiguriert (High Availability, Disaster-Recovery). Beachten Sie bei Abbildung 1, dass es sich bei den Datenbankservern um jedes von SAP NetWeaver unterstützte Datenbanksystem handeln kann, z. B. SAP HANA. 
+  * Andere Managementsysteme für relationale Datenbanken (RDBMS)
+
+Die Beispielreferenzarchitektur ist mit Hochverfügbarkeits- und Wiederherstellungsfunktionen konfiguriert (High Availability, Disaster-Recovery). Beachten Sie bei Abbildung 1, dass es sich bei den Datenbankservern um jedes von SAP NetWeaver unterstützte Datenbanksystem handeln kann, z. B. SAP HANA.
 
 Abbildung 1. Beispielreferenzarchitektur
 
-![Abbildung 1. Beispielreferenzarchitektur](/images/ref_architecture.png "Beispielreferenzarchitektur")
+![Abbildung 1. Beispielreferenzarchitektur](/images/SAP-optimization-ref-architecture-20180527.png "Beispielreferenzarchitektur")
