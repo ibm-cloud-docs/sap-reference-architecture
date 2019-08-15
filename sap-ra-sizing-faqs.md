@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-13"
+lastupdated: "2019-08-12"
 
 keywords: SAP Reference Architecture, SAP Application Performance Standard, SAPS, application servers, database, SAProuter
 
@@ -13,7 +13,7 @@ subcollection: sap-reference-architecture
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:faq: data-hd-content-type='faq'}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -21,7 +21,7 @@ subcollection: sap-reference-architecture
 # FAQs: Sizing and architecture
 {: #faqs_sizing}
 
-## What are the SAP Application Performance Standard (SAPS) measurements for each SAP NetWeaver-certified IBM Cloud server (rate SAPS and core)?
+## What are the SAP Application Performance Standard (SAPS) measurements for each SAP NetWeaver-certified {{site.data.keyword.cloud_notm}} server (rate SAPS and core)?
 {: faq}
 
 Table 1 contains the SAP measurements for the SAP NetWeaver-certified {{site.data.keyword.cloud}} {{site.data.keyword.baremetal_short}}.
@@ -40,20 +40,20 @@ Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud
 | BI.S3.NW384 | 79430 | 384 GB | 36 | 2203 |
 | BI.S3.NW768 | 79630 | 768 GB | 36 | 2211 |
 
-## What are the databases supported by the IBM Cloud SAP-Certified Infrastructure offering?
+## What are the databases supported by the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering?
 {: faq}
 
-For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported database platforms. For full operating system and database support statements for SAP NetWeaver, see [SAP Note 2414097 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}.
+For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported database platforms. For full operating system and database support statements for SAP NetWeaver, see [SAP Note 2414097](https://launchpad.support.sap.com/#/notes/2414097){: external}.
 
-## Can a Tier-2 configuration (application server, plus an SAP HANA database) be done with the SAP HANA-certified IBM Cloud Bare Metal Servers?
+## Can a Tier-2 configuration (application server, plus an SAP HANA database) be done with the SAP HANA-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}?
 {: faq}
 
 A Tier-2 configuration can't be done on the same piece of hardware. It can, however, be done using a combination of the SAP NetWeaver and SAP HANA configurations.
 
-## Is virtualization (VMware) supported on the IBM Cloud SAP-certified infrastructure for SAP NetWeaver or SAP HANA?
+## Is virtualization (VMware) supported on the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure for SAP NetWeaver or SAP HANA?
 {: faq}
 
-Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA. It's important to note that if you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2161991){: new_window}.
+Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA. It's important to note that if you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991)](https://launchpad.support.sap.com/#/notes/2161991){: external}.
 
 ## Can the configurations of the SAP-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} be changed?
 {: faq}
@@ -65,7 +65,7 @@ SAP NetWeaver-certified {{site.data.keyword.baremetal_short}} have fixed configu
 ## Are there any leading methods by which to deploy an SAP solution in the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure?
 {: faq}
 
-Yes, [SAP Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/p/SAP_Best_Practices){: new_window} offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [SAP-certified infrastructure ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/certified-infrastructure){: new_window}.
+Yes, [SAP Best Practices](https://help.sap.com/viewer/p/SAP_Best_Practices){: external} offers options that you can use during your deployment. {{site.data.keyword.IBM_notm}} also offers cloud consulting services. For more information, see [SAP-certified infrastructure](https://www.ibm.com/cloud/sap/certified-infrastructure){: external}.
 
 ## Do I have to deploy SAP Solutions Manager and SAProuter? If yes, is there a recommended infrastructure?
 {: faq}

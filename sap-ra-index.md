@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-08-12"
 
-keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery
+keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery, IBM, IBM Cloud, IBM DB2 LUW, Linux, Red Hat, RHEL, Windows Server, Microsoft SQL Server, SAP HANA, VMware, ESXi, IaaS, Public Cloud, SAP MaxDB, SAP ASE
 
 subcollection: sap-reference-architecture
 
@@ -13,7 +13,7 @@ subcollection: sap-reference-architecture
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-08-12"
 
 keywords: SAP Reference Architecture, Advanced Business Application Programming, ABAP, ABAP SAP Central Services, ASCS, SAP Central Services, SAP Software Provisioning Manager, SWPM, HANA System Replication, HSR, User Management Engine, UME, VLAN, SAP Web Dispatcher, SAP NetWeaver application servers, application servers, database, instance, load balancing, SAP logon groups, RFC server groups, high availability, highly available, HA, disaster recovery, DR, cluster software, Linux Pacemaker, virtual hostname
 
@@ -13,7 +13,7 @@ subcollection: sap-reference-architecture
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -29,7 +29,7 @@ Figure 1. Sample reference architecture
 ## VLANs
 {: #vlans}
 
-The SAP guidelines for landscape design recommend a segregation of server traffic on different network interface controllers (NICs). For example, business data should be separated from administrative and backup traffic. Assigning multiple NICs to different subnets enables this data segregation. For more information, see the Network section in [Building High Availability for SAP NetWeaver and SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: new_window} (PDF).
+The SAP guidelines for landscape design recommend a segregation of server traffic on different network interface controllers (NICs). For example, business data should be separated from administrative and backup traffic. Assigning multiple NICs to different subnets enables this data segregation. For more information, see the Network section in [Building High Availability for SAP NetWeaver and SAP HANA](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: external} (PDF).
 
 To follow the NIC recommendation, {{site.data.keyword.cloud_notm}} allows for the configuration of multiple VLANs on the servers. The VLAN interfaces can be made high availability (HA) through multiple NICs to be configured under bond interfaces (Linux) or teaming interfaces (Microsoft Windows). For both HA and disaster recovery (DR) capabilities on the {{site.data.keyword.baremetal_short}}, it's best to reserve additional IP addresses and assign the addresses to the different SAP services as the services are implemented. Consult SAP installation documentation for support on how to assign addresses during the installation with the SAP Software Provisioning Manager (SWPM). For virtual machines (VMs), the address of the main interface of the VM is usually sufficient.
 
@@ -46,7 +46,7 @@ Storage requirements differ to the point that the guidance is to clearly define 
 
   * Use internal storage for HA setups with a database that is replicated; for example, SAP HANA system replication. SAP NetWeaver application servers can either reside on internal storage or on shared network-attached storage (NAS).
 
-  * Use shared storage to facilitate failover capabilities with VMware-based installations. For more information on selecting the right storage type, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-storage-to-use-with-vmware-systems#storage-to-use-with-vmware-systems).
+  * Use shared storage to facilitate failover capabilities with VMware-based installations. For more information on selecting the right storage type, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-vmware-storage).
 
 All the options can be selected from within the {{site.data.keyword.cloud_notm}} infrastructure.
 
@@ -55,7 +55,7 @@ All the options can be selected from within the {{site.data.keyword.cloud_notm}}
 
 In a distributed installation of SAP applications on a centralized database, the base installation is replicated to achieve high availability. For each layer of the architecture, the high availability design varies.
 
-  * **SAP Web Dispatcher**. High availability is achieved with multiple redundant SAP Web Dispatcher instances with SAP application traffic. The SAP Web Dispatcher serves as a potential entry point for a set of SAP systems and other `https`-based services. It typically lies between the internet and the backend systems and deals with web protocol-based requests from the "outside world." The SAP Web Dispatcher works like a reverse proxy with a variety of supported features, such as load balancing and single sign on. For more information, see [SAP Web Dispatcher ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/saphelp_nw73EhP1/helpdata/en/48/8fe37933114e6fe10000000a421937/frameset.htm){: new_window}.
+  * **SAP Web Dispatcher**. High availability is achieved with multiple redundant SAP Web Dispatcher instances with SAP application traffic. The SAP Web Dispatcher serves as a potential entry point for a set of SAP systems and other `https`-based services. It typically lies between the internet and the backend systems and deals with web protocol-based requests from the "outside world." The SAP Web Dispatcher works like a reverse proxy with a variety of supported features, such as load balancing and single sign on. For more information, see [SAP Web Dispatcher](https://help.sap.com/viewer/product/SAP_NETWEAVER_731/7.31.25/en-US){: external}.
 
   * **ABAP SAP Central Services (ASCS)**. For high availability of ASCS in an {{site.data.keyword.cloud_notm}} environment, the cluster software of the target operating system needs to be installed, for example, Linux Pacemaker or Microsoft Cluster. The single point of failure of the ASCS (SAP's enqueue service) needs to be configured to replicate its data to an Enqueue Replication Service (ERS). An ERS instance needs to be installed as part of the SAP installation process and is supported by SAP's SWPM. For details on installing and configuring the cluster components for both ASCS and ERS, consult the documentation of the operating system vendor's offering.
 
@@ -72,7 +72,7 @@ Each tier uses a different strategy to provide disaster recovery protection.
 
  * **SAP NetWeaver application servers**. SAP application servers contain no business data; however, the installation and configuration of the server needs to be preserved for continued operation after a disaster. One disaster recovery strategy is to have SAP application servers in another region. Any changes to configuration or kernel updates on the primary application server must be copied to the virtual machines or servers in the disaster recovery region.
 
- * **SAP Central Services (SCS)**. The SCS component of the SAP application stack doesn't persist business data. You can build a server or a VM in the disaster recovery region to run the SCS role. The only content from the primary SCS note to synchronize is the `/sapmnt` share content. Also, if configuration changes or kernel updates take place on the primary SCS servers, the changes must be replicated on the disaster recovery SCS. To synchronize the two servers, use a regularly scheduled copy job to copy `/sapmnt` to the disaster recovery servers. For more information on SCS, see [Central Services Instance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/saphelp_nw73ehp1/helpdata/en/48/0728f74c6a3837e10000000a42189b/frameset.htm){: new_window}.
+ * **SAP Central Services (SCS)**. The SCS component of the SAP application stack doesn't persist business data. You can build a server or a VM in the disaster recovery region to run the SCS role. The only content from the primary SCS note to synchronize is the `/sapmnt` share content. Also, if configuration changes or kernel updates take place on the primary SCS servers, the changes must be replicated on the disaster recovery SCS. To synchronize the two servers, use a regularly scheduled copy job to copy `/sapmnt` to the disaster recovery servers. For more information on SCS, see [Central Services Instance](https://help.sap.com/viewer/product/SAP_NETWEAVER_731/7.31.25/en-US){: external}.
 
  * **Database tier**. For SAP HANA-based systems, use HANA-supported replication solutions such as HANA System Replication or {{site.data.keyword.cloud_notm}} storage replication features. For other supported databases, refer to the database documentation for its supported features. In general, choosing from the available options requires a clear understanding of the business requirements of the underlying SAP application. The impact of a potential loss of single transactions or even all data within a time window needs to be determined.
 

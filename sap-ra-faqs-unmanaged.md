@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-03-04"
+lastupdated: "2019-08-12"
 
 keywords: SAP Reference Architecture, database
 
@@ -13,7 +13,7 @@ subcollection: sap-reference-architecture, Frequently Asked Questions, FAQs
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:faq: data-hd-content-type='faq'}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -21,32 +21,32 @@ subcollection: sap-reference-architecture, Frequently Asked Questions, FAQs
 # FAQs: IBM Cloud SAP-Certified Infrastructure (self managed)
 {: #faqs}
 
-## What is the IBM Cloud SAP-Certified Infrastructure?
+## What is the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure?
 {: faq}
 
 The {{site.data.keyword.cloud}} SAP-Certified Infrastructure is the self-managed component of the {{site.data.keyword.cloud_notm}} for SAP Applications offering. This component of the offering lets you run SAP NetWeaver and SAP HANA on the {{site.data.keyword.cloud_notm}} as a self-service Infrastructure-as-a-Service (IaaS).
 
-## How is the SAP-Certified Infrastructure different from the IBM Cloud for SAP Applications offering?
+## How is the SAP-Certified Infrastructure different from the {{site.data.keyword.cloud_notm}} for SAP Applications offering?
 {: faq}
 
-The {{site.data.keyword.cloud_notm}} for SAP Applications offering has multiple components; the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is the self-managed component of the offering.  There is a *managed service* component available that is intended for customers who are looking for Managed Operating System (OS) services up to Managed SAP Basis services. The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is for customers or Business Partners who want to manage the infrastructure from the OS to the SAP applications.
+The {{site.data.keyword.cloud_notm}} for SAP Applications offering has multiple components; the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is the self-managed component of the offering.  There is a *managed service* component available that is intended for customers who are looking for a full-service solution that includes cloud hosting, SAP Basis and functional application support, and development and professional services. The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is for customers or Business Partners who want to manage the infrastructure from the OS to the SAP applications.
 
-## Are managed services available with the IBM Cloud infrastructure?
+## Are managed services available with the {{site.data.keyword.cloud_notm}} infrastructure?
 {: faq}
 
-Yes, {{site.data.keyword.IBM_notm}} can provide managed services for the operating system, database, and SAP through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. For more information, see [Managed Services for SAP Applications ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/sap/managed){: new_window}.
+Yes, {{site.data.keyword.IBM_notm}} can provide managed services for the operating system, database, and SAP through the {{site.data.keyword.cloud_notm}} for SAP Applications offering. For more information, see [Managed Services for SAP Applications](https://www.ibm.com/cloud/sap/managed){: external}.
 
-## Can SAP be run on any IBM Cloud server?
+## Can SAP be run on any {{site.data.keyword.cloud_notm}} server?
 {: faq}
 
 No, only the server models certified for SAP can be used to run SAP HANA or SAP NetWeaver.
 
-## Which servers have been certified to use with SAP in an IBM Cloud infrastructure?
+## Which servers have been certified to use with SAP in an {{site.data.keyword.cloud_notm}} infrastructure?
 {: faq}  
 
-For a current listing of the servers certified for use with an SAP workload, see [SAP-certified infrastructure ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/bare-metal-servers/sap){: new_window}.
+For a current listing of the servers certified for use with an SAP workload, see [SAP-certified infrastructure](https://www.ibm.com/cloud/sap/certified-infrastructure){: external}.
 
-## What kind of SAP workloads can be run on the IBM Cloud infrastructure?
+## What kind of SAP workloads can be run on the {{site.data.keyword.cloud_notm}} infrastructure?
 {: faq}
 
 Currently, workloads for SAP NetWeaver applications and SAP HANA for non-production and production use can be run on the {{site.data.keyword.cloud_notm}} infrastructure.
@@ -54,20 +54,20 @@ Currently, workloads for SAP NetWeaver applications and SAP HANA for non-product
 ## Which operating systems are supported for SAP?
 {: faq}
 
-  * For SAP NetWeaver-based applications, Red Hat Enterprise Linux for SAP Business Applications 6.x, SUSE Enterprise Linux for SAP Applications 12 SP2, and Microsoft Windows Server 2012+ are supported.
+  * For SAP NetWeaver-based applications, Red Hat Enterprise Linux for SAP Business Applications 6.x, SUSE Enterprise Linux 12 SP2 for SAP Applications, and Microsoft Windows Server 2012 R2, 2016, and 2019 are supported.
   * For SAP HANA, Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA, and VMware Server Virtualization 6.5.
 
 ## What server configurations can I change?
 {: faq}
 
-You can add most infrastructure options, such as attached storage, network, security, monitoring, intrusion detection, public bandwidth, and port speed. CPU, RAM, and internal storage default based on your server selection and cannot be changed during the ordering process or through a support ticket.
+You can add most infrastructure options, such as attached storage, network, security, monitoring, intrusion detection, public bandwidth, and port speed. CPU, RAM, and internal storage default based on your server selection and cannot be changed during the ordering process or through a support case.
 
 ## Who do I contact if I have further questions on the SAP-certified servers?
 {: faq}
 
 Your sales team is available to answer questions, as well as other {{site.data.keyword.cloud_notm}} support options, such as chat, phone, and [{{site.data.keyword.cloud_notm}} Docs](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
-## Is there a service responsibility matrix that shows the management tasks performed by IBM, the  customer, and Business Partner?
+## Is there a service responsibility matrix that shows the management tasks performed by {{site.data.keyword.IBM_notm}}, the  customer, and Business Partner?
 {: faq}
 
 The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure is a self-managed offering. All infrastructure management is the responsibility of the customer and Business Partner.
