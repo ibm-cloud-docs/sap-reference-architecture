@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-08-21"
 
 keywords: SAP Reference Architecture, bring your own license, BYOL, database
 

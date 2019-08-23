@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-08-21"
 
 keywords: SAP Reference Architecture, Frequently Asked Questions, FAQs, {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure implementation and operations
 
@@ -33,14 +33,14 @@ SAP applications are manually installed and are your responsibility because ther
 ## Where do I find information on how to implement SAP on the {{site.data.keyword.cloud_notm}} infrastructure?
 {: faq}
 
-  * For information on how to implement your SAP NetWeaver environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started#getting-started).
+  * For information on how to implement your SAP NetWeaver environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started).
 
-  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started).
+  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](/infrastructure/sap-hana?topic=sap-hana-getting-started).
 
 ## How do I access my SAP systems running on the {{site.data.keyword.cloud_notm}}?
 {: faq}
 
-You initially access your infrastructure through the {{site.data.keyword.cloud_notm}} console. The console provides extra connectivity options, including VPN. As this is a self-managed option, the selected connectivity option is your responsibility to implement.
+You initially access your infrastructure through the {{site.data.keyword.cloud_notm}} console. The console provides extra connectivity options, including VPN. You're responsible for the implemention of whichever connectivity option you choose because the offering is self-managed.
 
 ## How do I connect my SAP systems running on the {{site.data.keyword.cloud_notm}} infrastructure to my on-premises systems?
 {: faq}
@@ -50,9 +50,9 @@ Connectivity between your on-premises systems and the {{site.data.keyword.cloud_
 ## How do I perform backups for my SAP systems running on the {{site.data.keyword.cloud_notm}} infrastructure?
 {: faq}
 
-Backups are not included in the self-managed offering. There are, however, backup solutions available to purchase through the {{site.data.keyword.cloud_notm}} console. You also have the option to purchase and integrate third-party backup solutions.
+Backups are not included in the self-managed offering. You can, however, purchase backup solutions through the {{site.data.keyword.cloud_notm}} console. You also have the option to purchase and integrate third-party backup solutions.
 
 ## How do I migrate my on-premises systems to the {{site.data.keyword.cloud_notm}}?
 {: faq}
 
-No migration servers are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see the [{{site.data.keyword.cloud_notm}} Marketplace)](https://www.ibm.com/products?loc=us-en){: external}. Select *Services* > *Managed Cloud Services*.
+No migration services are included with the self-managed service; any migration activities are your responsibility. {{site.data.keyword.IBM_notm}} does offer a range of advisory and managed services that can assist you in SAP migration planning and execution. For more information, see the [{{site.data.keyword.cloud_notm}} Marketplace)](https://www.ibm.com/products?loc=us-en){: external}. Select *Services* > *Managed Cloud Services*.

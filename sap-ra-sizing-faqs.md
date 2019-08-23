@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-08-21"
 
 keywords: SAP Reference Architecture, SAP Application Performance Standard, SAPS, application servers, database, SAProuter
 
@@ -17,6 +17,7 @@ subcollection: sap-reference-architecture
 {:faq: data-hd-content-type='faq'}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
 
 # FAQs: Sizing and architecture
 {: #faqs_sizing}
@@ -25,8 +26,6 @@ subcollection: sap-reference-architecture
 {: faq}
 
 Table 1 contains the SAP measurements for the SAP NetWeaver-certified {{site.data.keyword.cloud}} {{site.data.keyword.baremetal_short}}.
-
-Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
 
 | **Sever type** | **SAPS** | **RAM** | **Cores** | **SAPS/Core** |
 | --- | --- | --- | --- | --- |
@@ -39,6 +38,7 @@ Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud
 | BI.S3.NW192 | 78850 | 192 GB | 36 | 2190 |
 | BI.S3.NW384 | 79430 | 384 GB | 36 | 2203 |
 | BI.S3.NW768 | 79630 | 768 GB | 36 | 2211 |
+{: caption="Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}" caption-side="top"}
 
 ## What are the databases supported by the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering?
 {: faq}
@@ -48,12 +48,15 @@ For SAP HANA configurations, SAP HANA 1.0 and SAP HANA 2.0 are the supported dat
 ## Can a Tier-2 configuration (application server, plus an SAP HANA database) be done with the SAP HANA-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}?
 {: faq}
 
-A Tier-2 configuration can't be done on the same piece of hardware. It can, however, be done using a combination of the SAP NetWeaver and SAP HANA configurations.
+A Tier-2 configuration can't be done on the same piece of hardware. It can be done using a combination of the SAP NetWeaver and SAP HANA configurations.
 
 ## Is virtualization (VMware) supported on the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure for SAP NetWeaver or SAP HANA?
 {: faq}
 
-Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA. It's important to note that if you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991)](https://launchpad.support.sap.com/#/notes/2161991){: external}.
+Yes, the {{site.data.keyword.cloud_notm}} SAP-certified infrastructure supports VMware ESXi for SAP NetWeaver and SAP HANA.
+
+If you choose to order and implement a server running VMware, it's your responsibility to properly size and configure all virtual machines on the server to comply with SAP's restrictions and best practices. For additional information, see [SAP Note 2161991)](https://launchpad.support.sap.com/#/notes/2161991){: external}.
+{: note}
 
 ## Can the configurations of the SAP-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} be changed?
 {: faq}
@@ -70,4 +73,4 @@ Yes, [SAP Best Practices](https://help.sap.com/viewer/p/SAP_Best_Practices){: ex
 ## Do I have to deploy SAP Solutions Manager and SAProuter? If yes, is there a recommended infrastructure?
 {: faq}
 
-No, deploying SAP Solutions Manager and SAProuter is not mandatory when working with a training, sandbox, or similar environment. However, it is best that these components be deployed in your production environment.
+No, deploying SAP Solutions Manager and SAProuter is not mandatory when working with a training, sandbox, or similar environment. However, it's best that the components be deployed in your production environment.

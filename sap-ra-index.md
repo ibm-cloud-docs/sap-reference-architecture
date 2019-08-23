@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-08-21"
 
 keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery, IBM, IBM Cloud, IBM DB2 LUW, Linux, Red Hat, RHEL, Windows Server, Microsoft SQL Server, SAP HANA, VMware, ESXi, IaaS, Public Cloud, SAP MaxDB, SAP ASE
 
@@ -20,7 +20,7 @@ subcollection: sap-reference-architecture
 # Getting started with IBM Cloud SAP reference architecture
 {: #getting-started}
 
-The {{site.data.keyword.cloud}} architecture provides superior technical capabilities such as a software definable environment critical to a cloud infrastructure, programmable interfaces, and hundreds of hardware and network configurations. It's designed to deliver a higher level of flexibility (by mixing virtual and dedicated servers to fit a variety of workloads), automation of interfaces, and hybrid deployment options. The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering for SAP HANA and SAP NetWeaver provides you with a best-fit selection. This selection includes bare metal and virtualization-based servers on top of which the SAP software stack is run.
+The {{site.data.keyword.cloud}} architecture provides superior technical capabilities, such as a software definable environment critical to a cloud infrastructure, programmable interfaces, and hundreds of hardware and network configurations. It's designed to deliver a higher level of flexibility (by mixing virtual and dedicated servers to fit a variety of workloads), automation of interfaces, and hybrid deployment options. The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering for SAP HANA and SAP NetWeaver provides you with a best-fit selection. This selection includes bare metal and virtualization-based servers on which the SAP software stack is run.
 
 ## Reference architecture
 {: #ref-arch}

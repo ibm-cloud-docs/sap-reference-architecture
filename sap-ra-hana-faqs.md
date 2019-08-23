@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-08-21"
 
 keywords: SAP Reference Architecture, Multitenant Database Containers, MDC, database, SAP HANA
 
@@ -36,12 +36,12 @@ The SAP-certified {{site.data.keyword.baremetal_long}} are available in the foll
 ## What hardware sharing options are supported in the {{site.data.keyword.cloud_notm}} infrastructure? For example, Virtual HANA and Multitenant Database Containers (MDC).
 {: faq}
 
-The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering is a bare metal server deployment certified by SAP and doesn't include virtualization. It's your responsibility to make sure that any changes on top of this infrastructure remain in compliance with respect to the SAP certification.
+The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering is a bare metal server deployment that is certified by SAP and doesn't include virtualization. It's your responsibility to make sure that any changes on top of this infrastructure remain compliant with the SAP certification.
 
 ## How do I deploy SAP HANA on the {{site.data.keyword.cloud_notm}}?
 {: faq}
 
-Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started). As this is a self-managed offering, you're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [Managed Services for SAP Applications](https://www.ibm.com/cloud/sap/managed){: external}.
+Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started). You're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}} because this offering is self-managed. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [Managed Services for SAP Applications](https://www.ibm.com/cloud/sap/managed){: external}.
 
 ## Is scale-out supported for SAP HANA?
 {: faq}
@@ -51,9 +51,9 @@ Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to su
 ## What is the maximum server size supported for SAP Business Suite on HANA?
 {: faq}
 
-8 TB is the maximum IaaS-certified server size to support SAP Business Suite on HANA.  12 TB is offered under HANA TDI v5 for approved workloads.
+8 TB is the maximum IaaS-certified server size to support SAP Business Suite on HANA. 12 TB is offered under HANA TDI v5 for approved workloads.
 
-##  What is the maximum server size supported for SAP Business Warehouse on HANA?
+## What is the maximum server size supported for SAP Business Warehouse on HANA?
 {: faq}
 
 4 TB is the maximum IaaS-certified server size to support SAP Business Warehouse on HANA.
@@ -61,7 +61,7 @@ Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to su
 ## How do I back up my SAP HANA-certified servers?
 {: faq}
 
-Server backup is not included in the self-managed offering. There are options that you can select during the server ordering process in the {{site.data.keyword.cloud_notm}} console. You also have the option to integrate a third-party backup solution.
+Server backup isn't included in the self-managed offering. You can select backup options during the ordering process in the {{site.data.keyword.cloud_notm}} console. You can also integrate a third-party backup solution.
 
 ## How do I migrate an existing SAP HANA database or relational database to an SAP HANA-certified server in the {{site.data.keyword.cloud_notm}}?
 {: faq}
