@@ -1,1 +1,0 @@
-Simplified Chinese translation files.
