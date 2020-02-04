@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-21"
+  years: 2018, 2020
+lastupdated: "2020-02-04"
 
 keywords: SAP Reference Architecture, Frequently Asked Questions, FAQs, {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure implementation and operations
 
@@ -35,7 +35,7 @@ SAP applications are manually installed and are your responsibility because ther
 
   * For information on how to implement your SAP NetWeaver environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started).
 
-  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](/infrastructure/sap-hana?topic=sap-hana-getting-started).
+  * For information how to implement your SAP HANA environment on the {{site.data.keyword.cloud_notm}} infrastructure, see [SAP HANA on {{site.data.keyword.cloud_notm}}](docs/infrastructure/sap-hana?topic=sap-hana-getting-started).
 
 ## How do I access my SAP systems running on the {{site.data.keyword.cloud_notm}}?
 {: faq}
