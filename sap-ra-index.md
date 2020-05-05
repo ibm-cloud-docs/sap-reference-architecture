@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-21"
+  years: 2018, 2020
+lastupdated: "2020-05-05"
 
 keywords: SAP Reference Architecture, relational database management systems, RDBMS, SAP Web Dispatcher, SAP NetWeaver Application Servers, application servers, database, high availability, disaster recovery, IBM, IBM Cloud, IBM DB2 LUW, Linux, Red Hat, RHEL, Windows Server, Microsoft SQL Server, SAP HANA, VMware, ESXi, IaaS, Public Cloud, SAP MaxDB, SAP ASE
 

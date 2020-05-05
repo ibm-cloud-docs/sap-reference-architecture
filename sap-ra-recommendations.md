@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-21"
+  years: 2018, 2020
+lastupdated: "2020-05-05"
 
 keywords: SAP Reference Architecture, Advanced Business Application Programming, ABAP, ABAP SAP Central Services, ASCS, SAP Central Services, SAP Software Provisioning Manager, SWPM, HANA System Replication, HSR, User Management Engine, UME, VLAN, SAP Web Dispatcher, SAP NetWeaver application servers, application servers, database, instance, load balancing, SAP logon groups, RFC server groups, high availability, highly available, HA, disaster recovery, DR, cluster software, Linux Pacemaker, virtual hostname
 
@@ -37,7 +37,7 @@ To follow the NIC recommendation, you can configure multiple VLANs on the server
 A best practice is to reserve additional IP addresses and assign the addresses to the different SAP services as the services are implemented for both HA and disaster recovery (DR) capabilities on the {{site.data.keyword.baremetal_long}}.
 {: tip}
 
-By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} have a public and a private interface. In general, it's not recommended to keep the public LAN configured for all servers in your {{site.data.keyword.cloud_notm}} infrastructure. Specific instances of the Vyatta Network Gateway should be deployed to allow public access to your environment, if needed. For more information, see [Vyatta Network Gateway](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-vyatta#vyatta).
+By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} have a public and a private interface. In general, it's not recommended to keep the public LAN configured for all servers in your {{site.data.keyword.cloud_notm}} infrastructure. Specific instances of the Vyatta Network Gateway should be deployed to allow public access to your environment, if needed. For more information, see [Vyatta Network Gateway](/docs/sap-reference-architecture?topic=sap-reference-architecture-vyatta#vyatta).
 
 ## {{site.data.keyword.cloud_notm}} storage
 {: #storage}
@@ -50,7 +50,7 @@ Storage requirements differ to the point that the guidance is to clearly define 
 
   * Use internal storage for HA setups with a database that is replicated; for example, SAP HANA system replication. SAP NetWeaver application servers can either reside on internal storage or on shared network-attached storage (NAS).
 
-  * Use shared storage to facilitate failover capabilities with VMware-based installations. For more information on selecting the right storage type, see [Storage to use with VMware Systems](/docs/infrastructure/vmware?topic=VMware-vmware-storage).
+  * Use shared storage to facilitate failover capabilities with VMware-based installations. For more information on selecting the right storage type, see [Storage to use with VMware Systems](/docs/vmware?topic=VMware-vmware-storage).
 
 All the options can be selected from within the {{site.data.keyword.cloud_notm}} infrastructure.
 
@@ -67,7 +67,7 @@ In a distributed installation of SAP applications on a centralized database, the
 
   * **Database tier**. The example reference architecture deploys a single SAP HANA, or other database, instance. For high availability, deploy more than one instance and use HANA System Replication (HSR) to implement manual failover. To enable automatic failover, a high availability extension for the specific Linux distribution is required. For other databases, either  a failover of the database instance on shared storage can be configured, or a replication technique similar to the SAP HANA case can be used. Consult the documentation of the supported database system for the set of options that are required to set up either high availability or replication.
 
-  For additional information, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/infrastructure/sap-hana?topic=sap-hana-ha#ha).
+  For additional information, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/sap-hana?topic=sap-hana-ha#ha).
 
 ## Disaster recovery
 {: #dr}
@@ -87,7 +87,7 @@ Each tier uses a different strategy to provide disaster recovery protection.
 
 ### User management
 
-SAP has its own Users Management Engine (UME) to control role-based access and authorization with the SAP application. For more information, see [SAP HANA Security - An Overview](https://archive.sap.com/documents/docs/DOC-62943){: external}. From a user management perspective, it's not relevant if your SAP systems run on-premises {{site.data.keyword.cloud_notm}}. Exceptions to that rule are mentioned under [Jump box server](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-jump_box#jump_box).
+SAP has its own Users Management Engine (UME) to control role-based access and authorization with the SAP application. For more information, see [SAP HANA Security - An Overview](https://archive.sap.com/documents/docs/DOC-62943){: external}. From a user management perspective, it's not relevant if your SAP systems run on-premises {{site.data.keyword.cloud_notm}}. Exceptions to that rule are mentioned under [Jump box server](/docs/sap-reference-architecture?topic=sap-reference-architecture-jump_box#jump_box).
 
 ### Network security
 

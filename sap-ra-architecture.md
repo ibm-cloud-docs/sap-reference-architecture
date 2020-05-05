@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-20"
+  years: 2018, 2020
+lastupdated: "2020-05-05"
 
 keywords: SAP reference architecture, {{site.data.keyword.baremetal_short}}, Advanced Business Application Programming, ABAP, VLAN, SAP Web Dispatcher, load balancing, database, high availability, disaster recovery, HA, DR
 
@@ -27,7 +27,7 @@ After your environment is ordered and deployed, you connect through an administr
 
 There are two different data centers that are shown in Figure 1 that consist of several SAP-certified {{site.data.keyword.baremetal_short}} for both SAP NetWeaver and SAP HANA. The {{site.data.keyword.baremetal_short}} or {{site.data.keyword.virtualmachinesshort}} in the diagram can be different, depending on your environment and the database technology you're using. In addition, the SAP HANA data in the architectural overview is transferred from the primary data center to the secondary data center for disaster recovery (DR). Other databases also allow for setups like Figure 1, with the setup being different.
 
-In Figure 1, on the DR data center site, replicated systems are configured to maintain DR capabilities, which need to be implemented on different layers. For more information, see [Disaster recovery considerations](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
+In Figure 1, on the DR data center site, replicated systems are configured to maintain DR capabilities, which need to be implemented on different layers. For more information, see [Disaster recovery considerations](/docs/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
 
 Figure 1. Sample reference architecture
 
@@ -48,9 +48,9 @@ While a public interface with a configured firewall can cover some scenarios - f
 ## Vyatta Network Gateway
 {: #vyatta}
 
-Vyatta provides software-based virtual router, virtual firewall/NAT, and VPN capabilities for both IPV4 and IPV6. If users are to connect remotely into your {{site.data.keyword.cloud_notm}}-based systems, these devices can serve as end-points for both side-to-side VPN or the so-called "road warrior VPN" (access point). Different kinds of VPN technologies - IPSec, or SSL VPN tunnels, such as OpenVPN - can be used. Depending on the SAP technology you're using, these VPN connections can be used to interconnect SAP systems (even with non-SAP systems) for traditional GUI technology, and browser-based SAP UI5 technology. Connecting an SAP Web Dispatcher behind a Vyatta Gateway allows for further features to be used, such as load balancing or single sign-on scenarios. For more information on the SAP Web Dispatcher, see [High availability](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#availability).
+Vyatta provides software-based virtual router, virtual firewall/NAT, and VPN capabilities for both IPV4 and IPV6. If users are to connect remotely into your {{site.data.keyword.cloud_notm}}-based systems, these devices can serve as end-points for both side-to-side VPN or the so-called "road warrior VPN" (access point). Different kinds of VPN technologies - IPSec, or SSL VPN tunnels, such as OpenVPN - can be used. Depending on the SAP technology you're using, these VPN connections can be used to interconnect SAP systems (even with non-SAP systems) for traditional GUI technology, and browser-based SAP UI5 technology. Connecting an SAP Web Dispatcher behind a Vyatta Gateway allows for further features to be used, such as load balancing or single sign-on scenarios. For more information on the SAP Web Dispatcher, see [High availability](/docs/sap-reference-architecture?topic=sap-reference-architecture-recommendations#availability).
 
-The Vyatta device can be deployed in a high-availability cluster configuration with a bandwidth up to 10 Gbps. For more information, see [Vyatta 5400 High Availability Configuration](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-vyatta-5400-high-availability-configuration#vyatta-5400-high-availability-configuration).
+The Vyatta device can be deployed in a high-availability cluster configuration with a bandwidth up to 10 Gbps. For more information, see [Vyatta 5400 High Availability Configuration](/docs/virtual-router-appliance?topic=virtual-router-appliance-vyatta-5400-high-availability-configuration#vyatta-5400-high-availability-configuration).
 
 ## Jump box server
 {: #jump_box}
@@ -73,6 +73,6 @@ All SAP Software solutions based on either SAP HANA or on SAP NetWeaver include 
 
 For more information on the SAP HANA-certified servers, see the [Certified and Supported SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=IBM%20Cloud){: external}.
 
-For more information on the SAP HANA sizing process, see [Sizing the server (SAP HANA)](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server).
+For more information on the SAP HANA sizing process, see [Sizing the server (SAP HANA)](/docs/sap-hana?topic=sap-hana-size_the_server#size_the_server).
 
-For more information on the SAP NetWeaver sizing processing, see [Sizing the server (SAP NetWeaver)](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-size_the_server#size_the_server).
+For more information on the SAP NetWeaver sizing processing, see [Sizing the server (SAP NetWeaver)](/docs/sap-netweaver?topic=sap-netweaver-size_the_server#size_the_server).

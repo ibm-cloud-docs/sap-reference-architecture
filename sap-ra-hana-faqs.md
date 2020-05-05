@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-21"
+  years: 2018, 2020
+lastupdated: "2020-05-05"
 
 keywords: SAP Reference Architecture, Multitenant Database Containers, MDC, database, SAP HANA
 
@@ -41,12 +41,12 @@ The {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering is a 
 ## How do I deploy SAP HANA on the {{site.data.keyword.cloud_notm}}?
 {: faq}
 
-Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started). You're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}} because this offering is self-managed. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [Managed Services for SAP Applications](https://www.ibm.com/cloud/sap/managed){: external}.
+Implementation steps are described in [SAP HANA on {{site.data.keyword.cloud_notm}}](/docs/sap-hana?topic=sap-hana-getting-started). You're responsible for implementing SAP HANA in the {{site.data.keyword.cloud_notm}} because this offering is self-managed. {{site.data.keyword.IBM_notm}} does provide advisory and managed SAP services to assist you. For more information, see [Managed Services for SAP Applications](https://www.ibm.com/cloud/sap/managed){: external}.
 
 ## Is scale-out supported for SAP HANA?
 {: faq}
 
-Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage) for more information.
+Yes. See [Configuring your {{site.data.keyword.cloud_notm}} infrastructure to support SAP HANA multi-node](/docs/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage) for more information.
 
 ## What is the maximum server size supported for SAP Business Suite on HANA?
 {: faq}
