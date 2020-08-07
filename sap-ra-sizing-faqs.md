@@ -29,24 +29,24 @@ Table 1 contains the SAP measurements for the SAP NetWeaver-certified {{site.dat
 
 | **Sever type** | **SAPS** | **RAM** | **Cores** | **SAPS/Core** |
 | --- | --- | --- | --- | --- |
-| BI.S1.NW32 | 10980 | 32 GB | 4 | 2745 |
-| BI.S1.NW128 | 54130 | 128 GB | 24 | 2255 |
-| BI.S1.NW256 | 55020 | 256 GB | 24 | 2292 |
-| BI.S2.NW512 | 65520 | 512 GB | 28 | 2340 |
-| BI.S3.NW32 | 11970 | 32 GB | 4 | 2992 |
-| BI.S3.NW64 | 12750 | 64 GB | 4 | 3187 |
-| BI.S3.NW192<br>BI.S3.H2.192 | 78850 | 192 GB | 36 | 2190 |
-| BI.S3.NW384<br>BI.S3.H2.384 | 79430 | 384 GB | 36 | 2203 |
-| BI.S3.NW768<br>BI.S3.H2.768 | 79630 | 768 GB | 36 | 2211 |
-| BI.S4.NW192<br>BI.S4.H2.192 | 82470 | 192 GB | 32 | 2577 |
-| BI.S4.NW384<br>BI.S4.H2.384 | 85130 | 384 GB | 32 | 2660 |
-| BI.S4.NW768<br>BI.S4.H2.768 | 112830 | 768 GB | 40 | 2820 |
-| BI.S4.NW1500<br>BI.S4.H2.1500 | 147220 | 1.5 TB | 56 | 2629 |
-| BI.S4.NW3000<br>BI.S4.H2.3000 | 135127 | 3 TB | 56 | 2413 |
-| BI.S4.H4.3000 | 285970 | 3 TB | 112 | 2553 |
-| BI.S4.H4.6000 | 285970 | 6 TB | 112 | 2553 |
-| BI.S4.H8.6000 | 550670 | 6 TB | 224 | 2458 |
-| BI.S4.H8.12000 | 550670 | 12 TB | 224 | 2458 |
+| BI.S1.NW32 | 10,980 | 32 GB | 4 | 2,745 |
+| BI.S1.NW128 | 54,130 | 128 GB | 24 | 2,255 |
+| BI.S1.NW256 | 55,020 | 256 GB | 24 | 2,292 |
+| BI.S2.NW512 | 65,520 | 512 GB | 28 | 2,340 |
+| BI.S3.NW32 | 11,970 | 32 GB | 4 | 2,992 |
+| BI.S3.NW64 | 12,750 | 64 GB | 4 | 3,187 |
+| BI.S3.NW192<br>BI.S3.H2.192 | 78,850 | 192 GB | 36 | 2,190 |
+| BI.S3.NW384<br>BI.S3.H2.384 | 79,430 | 384 GB | 36 | 2,203 |
+| BI.S3.NW768<br>BI.S3.H2.768 | 79,630 | 768 GB | 36 | 2,211 |
+| BI.S4.NW192<br>BI.S4.H2.192 | 82,470 | 192 GB | 32 | 2,577 |
+| BI.S4.NW384<br>BI.S4.H2.384 | 85,130 | 384 GB | 32 | 2,660 |
+| BI.S4.NW768<br>BI.S4.H2.768 | 112,830 | 768 GB | 40 | 2,820 |
+| BI.S4.NW1500<br>BI.S4.H2.1500 | 147,220 | 1.5 TB | 56 | 2,629 |
+| BI.S4.NW3000<br>BI.S4.H2.3000 | 135,127 | 3 TB | 56 | 2,413 |
+| BI.S4.H4.3000 | 285,970 | 3 TB | 112 | 2,553 |
+| BI.S4.H4.6000 | 285,970 | 6 TB | 112 | 2,553 |
+| BI.S4.H8.6000 | 550,670 | 6 TB | 224 | 2,458 |
+| BI.S4.H8.12000 | 550,670 | 12 TB | 224 | 2,458 |
 {: caption="Table 1. SAPS measurements for SAP NetWeaver-certified {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}" caption-side="top"}
 
 ## What are the databases supported by the {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure offering?
