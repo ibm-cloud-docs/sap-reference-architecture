@@ -6,7 +6,7 @@ lastupdated: "2020-05-05"
 
 keywords: SAP Reference Architecture, database
 
-subcollection: sap-reference-architecture, Frequently Asked Questions, FAQs
+subcollection: sap-reference-architecture
 
 ---
 

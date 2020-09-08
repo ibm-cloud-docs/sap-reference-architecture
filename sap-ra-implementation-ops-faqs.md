@@ -6,7 +6,7 @@ lastupdated: "2020-05-05"
 
 keywords: SAP Reference Architecture, Frequently Asked Questions, FAQs, {{site.data.keyword.cloud_notm}} SAP-Certified Infrastructure implementation and operations
 
-subcollection: sap-reference-architiecture
+subcollection: sap-reference-architecture
 
 ---
 
